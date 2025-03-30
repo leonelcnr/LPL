@@ -11,35 +11,88 @@ form {
     align-items: justify;
     justify-content: center;
     text-align: left;
+    /* box-sizing: content-box; */
+    background-color: rgb(40, 39, 39);
+    border-radius: 0px;
+    transition: all 0.5s ease;
+    padding: 10px;
+}
+
+form:hover {
+    background-color: rgb(33, 32, 32);
+    /* border: rgb(0, 147, 206) solid 2px; */
+    border-radius: 15px;
+    padding: 0px;
 }
 
 form h2,
 form legend {
     text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+form label {
+    font-weight: 900;
+    font-size: 15px;
+    padding: 0 20%;
 
 }
 
+form input,
+form textarea {
+    width: 60%;
+    background-color: rgb(49, 48, 48);
+    /* border: rgb(69, 65, 65) 1px solid; */
+    border: none;
+    align-self: center;
+    transition: all 0.5s ease;
+    border-radius: 2%;
+
+}
+
+form input:hover {
+    background-color: rgb(85, 87, 87);
+    color: #252727;
+    scale: 1.05;
+}
+
+form input:focus {
+    border: black 1px solid;
+    outline: none;
+}
+
 #Enviar {
-    font-family: "Karla", Arial, Helvetica, sans-serif;
     width: 25%;
     align-self: center;
-    border-radius: 20px;
-    color: black;
-    background-color: rgb(87, 88, 88);
+    border-radius: 5px;
+    background-color: rgb(49, 48, 48);
+    font-weight: 500;
+    border: none;
+    transition: scale, width 0.7s ease;
+}
+
+#Enviar:hover {
+    background-color: #7c7d7d;
+    color: rgb(49, 48, 48);
+    border: none;
+    width: 60%;
+    /* scale: 1.1; */
 }
 
 .contacto {
     border: rgb(242, 0, 0) solid 2px;
     height: calc(100vh - 70px);
-    padding: 20px;
+    padding: 40px;
     box-sizing: border-box;
     overflow: hidden;
 }
 
 .formulario {
     /* border: blue solid 2px; */
-    padding: 20px;
-    height: 60%;
+    /* padding: 20px; */
+    height: 70%;
     width: 60%;
 
 }
