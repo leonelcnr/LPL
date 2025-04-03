@@ -1,9 +1,15 @@
+:root {
+    --bordes: 1px solid #fd1111;
+    --tiempo: 0.5s;
+}
+
+
 body {
     text-align: center;
 }
 
 form {
-    border: rgb(0, 147, 206) solid 2px;
+    border: var(--bordes);
     width: 50%;
     height: 100%;
     display: flex;
@@ -14,7 +20,7 @@ form {
     box-sizing: border-box;
     background-color: rgb(40, 39, 39);
     border-radius: 3px;
-    transition: all 0.5s ease;
+    transition: all var(--tiempo) ease;
     padding: 10px;
 
 }
@@ -68,8 +74,8 @@ form input:focus {
     background-color: rgb(49, 48, 48);
     font-weight: 500;
     border: none;
-    transition: width 0.7s ease;
-    padding: 0%;
+    transition: all 0.5s ease;
+    padding: 0px;
 }
 
 #Enviar:hover {
@@ -77,11 +83,12 @@ form input:focus {
     color: rgb(49, 48, 48);
     border: none;
     width: 60%;
-    /* scale: 1.1; */
+    transform-origin: center;
+
 }
 
 .contacto {
-    border: rgb(242, 0, 0) solid 2px;
+    border: var(--bordes);
     height: calc(100vh - 70px);
     padding: 0px 40px;
     box-sizing: border-box;
@@ -89,11 +96,12 @@ form input:focus {
 }
 
 .formulario {
-    border: blue solid 2px;
+    border: var(--bordes);
     /* padding: 20px; */
     height: 80%;
     width: 60%;
     display: flex;
+    margin: 0px 100px;
 }
 
 
@@ -105,14 +113,14 @@ h1 {
 }
 
 .informacion-contacto {
-    border: rgb(0, 147, 206) solid 2px;
+    border: var(--bordes);
     width: 50%;
     height: 100%;
-    padding: 50px;
+    padding: 0px;
 }
 
 .informacion {
-    border: rgb(0, 147, 206) solid 2px;
+    border: var(--bordes);
     width: auto;
     height: 50%;
     display: flex;
@@ -123,14 +131,22 @@ h1 {
     box-sizing: border-box;
     background-color: rgb(40, 39, 39);
     padding: 1em;
+    margin: 1rem;
     margin-bottom: 1em;
+    margin-top: 0;
+    transition: all var(--tiempo) ease;
+    overflow: hidden;
 
+}
+
+.informacion:hover {
+    background-color: rgb(33, 32, 32);
 }
 
 
 
 .redes-sociales {
-    border: rgb(49, 225, 225) solid 2px;
+    border: var(--bordes);
     width: auto;
     height: 8rem;
     text-align: center;
