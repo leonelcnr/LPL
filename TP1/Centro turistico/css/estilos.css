@@ -26,7 +26,7 @@ header {
     display: flex;
     height: 70px;
     position: relative;
-    /* border: black 2px solid; */
+    border: rgb(255, 7, 7) 2px solid;
     font-weight: 900;
     transition: padding, scale, 0.5s ease;
     animation: fadeInUp 1s ease;
