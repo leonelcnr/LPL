@@ -28,31 +28,32 @@
         <section class="contacto">
             <H1>CONTACTO</H1>
             <article class="formulario">
-                <form action="leonelcnr@gmail.com" method="post">
-                    <legend>Forrmulario de contacto</legend>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre">
-                    <input type="text" id="apellido" name="apellido" placeholder="Apellido">
-                    <input type="email" id="email" name="email" placeholder="Email">
-                    <input type="confirmar-email" id="confirmar-email" name="confirmar-email"
-                        placeholder="confirmar-email">
+                <form action="procesar.php" method="post" id="formulario">
+                    <legend>Formulario de contacto</legend>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required="holaaaa">
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="email" id="confirmar-email" name="confirmar-email" placeholder="confirmar-email"
+                        required>
                     <input value="ENVIAR" type="submit" id="Enviar">
                 </form>
                 <section class="informacion-contacto">
                     <article class="informacion">
                         <h2>Información de contacto</h2>
                         <p>Teléfono: 341-567890</p>
-                        <p>Correo electrónico: contacto@gmail.com
+                        <p>Correo electrónico: contacto@gmail.com</p>
                     </article>
                     <article class="redes-sociales">
-                        <a href="">INSTRAGRAM</a>
+                        <a href="">INSTAGRAM</a>
                         <a href="">GITHUB</a>
                         <a href="">FACEBOOK</a>
                     </article>
             </article>
-            </article>
+            <div id="mensajeRespuesta">mensajeRespuesta</div>
         </section>
     </main>
     <script src="contacto.js"></script>
+
 </body>
 
 </html>
