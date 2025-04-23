@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, 'Times New Roman';
+    text-decoration: none;
+    border-style: none;
+    text-emphasis-style: none;
+    outline-style: none;
+    color: whitesmoke;
+}
+
+:root {
+    --color_1: #18181b;
+    --color_2: #0e0e11;
+    --color_3: #434044;
+    --color_4: #312e2f;
+
+}
+
+body {
+    box-sizing: border-box;
+}
+
+
+main {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color_1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color_2);
+    box-sizing: border-box;
+    width: 50%;
+    height: 60%;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    border: 0.1px rgb(99, 98, 98) solid;
+}
+
+
+#mensajeRespuesta {
+    /* border: 2px solid #ff0000; */
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    width: 7rem;
+    height: 1.9rem;
+    border-radius: 5px;
+    background-color: var(--color_3);
+    border: black 1.7px solid;
+}
+
+input {
+    align-self: center;
+    text-align: center;
+    width: 60%;
+    height: 2.5rem;
+    border-radius: 5px;
+    background-color: var(--color_3);
+    border: 1px black solid;
+    color: black;
+}
+
+input:disabled {
+    background-color: var(--color_4);
+    color: rgb(99, 98, 98);
+}
+
+
+input:not(:disabled)::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+input input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+button {
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: var(--color_4);
+}
