@@ -1,0 +1,116 @@
+* {
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: Inter, sans-serif;
+    transition: all 0.5s ease;
+}
+
+@keyframes apareceDesaparece {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-100%);
+    }
+
+    50% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0%);
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(100%);
+    }
+}
+
+:root {
+    --color1: #181817;
+    --color2: #393837;
+}
+
+body {
+    background-image: url(mesh-gradient\ \(1\).png);
+    background-size: cover;
+}
+
+section {
+    /* border: black solid 1px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+input input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+article {
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--color1);
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+
+article h1 {
+    font-size: 1.5rem;
+}
+
+input {
+    /* height: 1.5rem; */
+    border-radius: 5px;
+    width: 60%;
+    height: 2rem;
+    text-align: center;
+    color: var(--color2);
+    transition: all 0.5s ease;
+}
+
+.imagen {
+    /* border: blue solid 9px; */
+    object-fit: contain;
+}
+
+img {
+    object-fit: contain;
+}
+
+#boton {
+    width: 20%;
+    border: none;
+    background-color: var(--color2);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    order: 3;
+}
+
+#boton:hover {
+    background-color: #444343;
+    cursor: pointer;
+}
+
+/* .oculto {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+} */
+
+#respuesta {
+    position: absolute;
+    animation: apareceDesaparece 4s forwards;
+    bottom: 15%;
+}

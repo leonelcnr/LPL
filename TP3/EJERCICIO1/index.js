@@ -13,17 +13,9 @@ function producto(numero1, numero2) {
     return parseInt(numero1) * parseInt(numero2);
 };
 
-boton_suma.addEventListener('click', async function () {
-    numero.placeholder = 'ingrese el primer numero';
-    numero.disabled = false;
-
-    const numero_1 = await ingreso();
-    numero.placeholder = 'ingrese el segundo numero';
-    const numero_2 = await ingreso();
-    numero.placeholder = 'La suma es: ' + suma(numero_1, numero_2);
-    numero.disabled = true;
-});
-
+function es_mayor(numero1, numero2) {
+    return parseInt(numero1) > parseInt(numero2);
+};
 
 function ingreso() {
     return new Promise((resolve) => {
@@ -39,6 +31,26 @@ function ingreso() {
 };
 
 
+
+
+// CUANDO SE APRETA EL BOTON DE SUMAR
+boton_suma.addEventListener('click', async function () {
+    fecha();
+    numero.placeholder = 'ingrese el primer numero';
+    numero.disabled = false;
+
+    const numero_1 = await ingreso();
+    numero.placeholder = 'ingrese el segundo numero';
+    const numero_2 = await ingreso();
+    numero.placeholder = 'La suma es: ' + suma(numero_1, numero_2);
+    numero.disabled = true;
+
+
+});
+
+
+
+// CUANDO SE APRETA EL BOTON DE PRODUCTO
 boton_producto.addEventListener('click', async function () {
     numero.disabled = false;
     numero.placeholder = 'ingrese el primer numero';
@@ -49,7 +61,13 @@ boton_producto.addEventListener('click', async function () {
     numero.disabled = true;
 });
 
-
+function fecha() {
+    fecha = new Date();
+    dia_actual = fecha.getDate();
+    mes_actual = fecha.getMonth() + 1;
+    anio_actual = fecha.getFullYear();
+    console.log(dia_actual, mes_actual, anio_actual);
+};
 
 
 //NOTAS

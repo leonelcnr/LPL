@@ -1,0 +1,141 @@
+:root {
+    --color-primario: rgb(35, 35, 35);
+    --color-secundario: #5d5d5d;
+}
+
+* {
+    transition: all 0.3s ease;
+}
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0.5;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+;
+
+@keyframes desaparecer {
+    0% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 0.5;
+        transform: translateY(-100%);
+    }
+}
+
+
+
+body {
+    background-color: var(--color-primario);
+}
+
+.imagenes {
+    padding: 1.5rem;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.galeria:hover img {
+    opacity: 0.3;
+    filter: blur(1px);
+}
+
+.imagenes:hover img {
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.galeria {
+    margin: auto;
+    height: 90vh;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    /* grid-gap: 10px; */
+    border: 1px solid black;
+    /* overflow: hidden; */
+
+}
+
+#modal {
+    box-sizing: border-box;
+    padding: 2rem;
+    width: 50vw;
+    height: 70vh;
+    position: absolute;
+    overflow: hidden;
+    background-color: var(--color-primario);
+    animation: aparecer 1.5s ease;
+    transition: display 1.5s, opacity 1.5s, transform 1.5s;
+    transition-behavior: allow-discrete;
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+/* porque funciona asi?? */
+
+#modal[open] {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+
+
+#modal::backdrop {
+    background: rgba(0, 0, 0, 0);
+}
+
+#modal[open]::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+
+}
+
+#imagenAmpliada {
+    object-fit: contain;
+}
+
+#cerrarModal {
+    color: white;
+    background-color: var(--color-secundario);
+    position: absolute;
+    left: 2%;
+    bottom: 5%;
+    transform: translateX(50%);
+    border-radius: 2px;
+    border: none;
+    width: 5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+#cerrarModal:hover {
+    background-color: var(--color-primario);
+}
+
+
+
+/* * {
+    border: 1px solid black;
+} */
