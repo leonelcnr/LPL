@@ -1,0 +1,29 @@
+@import url(index.css);
+
+* {
+    font-family: Inter;
+}
+
+.contenedor-imagen {
+    width: 300px;
+    margin-top: 2rem;
+}
+
+.contenedor-imagen img {
+    width: 100%;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    background-color: var(--color1);
+    color: var(--violeta);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
