@@ -14,15 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-
     botonCerrar.addEventListener('click', () => {
-
-
         modal.close();
-
     });
-
-
-
-
 });
