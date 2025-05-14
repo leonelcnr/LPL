@@ -5,9 +5,10 @@ function calcular(operacion) {
 }
 
 
+
+
 // Agrega los numeros al input
 function agregarNumero(botones) {
-    console.log('hola')
     botones.forEach(function (boton) {
         boton.addEventListener("click", function (e) {
             let valor = e.target;
@@ -45,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Hace el calculo cuando se apreta el boton de igual
     botonIgual.addEventListener("click", function () {
         let operacion = document.getElementById("input-numero").value;
-        let resultado = calcular(operacion);
+        let resultado = calcular(operacion); // evalua la operacion con la funcion calcular
         document.getElementById("input-numero").value = resultado;
     });
 

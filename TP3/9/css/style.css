@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /* border: 1px solid red; */
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    text-align: center;
+    margin: 3rem;
+    height: 10%;
+}
+
+article {
+    /* border: 1px solid rgb(247, 0, 255); */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: start; */
+}
+
+section {
+    /* border: 1px solid blue; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+article div {
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+#div-generar {
+    height: 20%;
+    /* margin-bottom: 20rem; */
+}
+
+#div-generar button {
+    height: 2rem;
+}
+
+#div-generar input {
+    margin-left: 1rem;
+    height: 2rem;
+    /* width: c; */
+}
+
+#div-formulario {
+    height: 80%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+* {
+    /* border: 1px solid tomato; */
+}

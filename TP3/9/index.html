@@ -5,25 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 9</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
     <section>
-        <header>
-            <h1>Generar formuilario</h1>
+        <header class="titulo">
+            <h1>Generardor formulario</h1>
         </header>
         <article>
-            <div div-generar>
-                <button type="button" id="generar-formulario">Generar un formuilario</button>
-                <input type="text">
+            <div id="div-generar">
+                <button type="button" id="generar-formulario">Generar un formulario</button>
+                <input type="text" id="campos-solicitados">
             </div>
-            <div div-formulario>
-                <form action="POST">
-                    <button type="submit">Enviar Datos</button>
+            <div id="div-formulario">
+                <header>
+                    <h1>FORMULARIO</h1>
+                </header>
+                <form action="POST" id="formulario">
                 </form>
+                <button type="submit">Enviar Datos</button>
             </div>
         </article>
     </section>
 </body>
 
 </html>
+
+
+<!-- generar un formulario dinamicamente, ingresando los parametros en el input, separados por , -->

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina la palabra</title>
+    <script src="juego.js"></script>
+</head>
+
+<body>
+    <section>
+        <article>
+            <h1>A jugar <span id="nombreJugador"></span></h1>
+            <label for="cantidad-letras">Cantidad de letras</label>
+            <select name="cantidad-letras" id="cantidad-letras">
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+            </select>
+            <div id="partidaPendiente">
+                <!-- aca debe ir la ultima partida jugada -->
+            </div>
+
+            <div id="botonesPartida">
+                <button type="button" id="botonJugar">Jugar</button>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>
