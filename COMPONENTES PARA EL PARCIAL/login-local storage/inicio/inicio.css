@@ -1,0 +1,44 @@
+* {
+    font-family: Inter, 'Times New Roman';
+}
+
+article {
+    width: 80%;
+
+}
+
+.header-inicio {
+    margin-top: 1rem;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+
+.header-inicio h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+
+#nombre-bienvenida {
+    color: #c55e22;
+}
+
+
+
+article div p {
+
+    font-size: 1.1rem;
+    text-align: left;
+    padding: 2rem 5rem;
+    columns: 3;
+    /* margin-bottom: 100px; */
+    /* border: 1px solid black; */
+}
