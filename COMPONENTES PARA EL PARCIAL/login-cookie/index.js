@@ -4,24 +4,22 @@ function setCookies(nombre, tiempo, valor) {
     let valorCookie = valor
     // let postCookie = document.cookie.search(nombreCookie)
     document.cookie = nombreCookie + "=" + valorCookie + "; max-age=" + tiempoCookie;
-
 }
 
-// function getCookies(nombreCookie) {
-
-//     // Decodifica las cookies y las separa en un array
-//     let cookies = document.cookie.split(';');
-//     for (let i = 0; i < cookies.length; i++) {
-//         let cookie = cookies[i].trim();
-//         // Busca la cookie por nombre
-//         if (cookie.indexOf(nombreCookie + "=") === 0) {
-//             // Devuelve el valor de la cookie
-//             return cookie.substring((nombreCookie + "=").length, cookie.length);
-//         }
-//     }
-//     // Si no la encuentra, devuelve cadena vacía
-//     return "";
-// }
+function getCookies(nombreCookie) {
+    // Decodifica las cookies y las separa en un array
+    let cookies = document.cookie.split(';');
+    for (let i = 0; i < cookies.length; i++) {
+        let cookie = cookies[i].trim();
+        // Busca la cookie por nombre
+        if (cookie.indexOf(nombreCookie + "=") === 0) {
+            // Devuelve el valor de la cookie
+            return cookie.substring((nombreCookie + "=").length, cookie.length);
+        }
+    }
+    // Si no la encuentra, devuelve cadena vacía
+    return "";
+}
 
 function getCookies(nombreCookie) {
     let cookies = document.cookie;
