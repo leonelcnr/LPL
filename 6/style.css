@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    /* border: 1px solid red; */
+}
+
+:root {
+    --colorFondo: #181a1f;
+    --colorFondoFormulario: #292c34;
+}
+
+/* Para navegadores WebKit como Chrome, Safari, Edge (versión Chromium) y Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    /* También es buena idea quitar el margen que puedan tener */
+}
+
+/* Para Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+form {
+    width: 80%;
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: var(--colorFondoFormulario);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+    padding-bottom: 60px;
+
+}
+
+#divContenedor {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    /* padding: 0%; */
+}
+
+#divContenedor [id^="div"] {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 2.3rem;
+    /* border: 1px solid #ff0000; */
+}
+
+#divDatosPersonales div {
+    /* border: 1px solid #ff0000; */
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 10px;
+
+    input {
+        width: 100%;
+        /* color: var(--colorFondoFormulario); */
+    }
+}
+
+
+form header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+form input,
+select {
+    width: 70%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    background-color: var(--colorFondo);
+    /* color: #fff; */
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--colorFondo);
+}
+
+article {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 4px solid red; */
+}
+
+button {
+    margin: 0;
+    width: 30%;
+    background-color: var(--colorFondo);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 2.5rem;
+    position: absolute;
+    bottom: 40px;
+    /* font-size: r; */
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #363739;
+}
+
+input {
+    color: #fff;
+}
+
+#avisoFlotante {
+    /* border: 1px solid #ff0000; */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(179, 172, 172);
+    padding: 10px;
+    animation-name: aparecerDesaparecer;
+    animation-duration: 5s;
+    /* Duración de la animación en segundos */
+    animation-iteration-count: 1;
+    /* animation-timing-function: foowards; */
+    animation-fill-mode: forwards;
+    cursor: default;
+    /* visibility: hidden; */
+}
+
+@keyframes aparecerDesaparecer {
+    0% {
+        opacity: 0;
+        visibility: visible;
+        /* Completamente transparente (invisible) al inicio */
+    }
+
+    50% {
+        opacity: 1;
+        visibility: visible;
+        /* Completamente opaco (visible) a la mitad de la animación */
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        /* Vuelve a ser completamente transparente al final */
+    }
+}

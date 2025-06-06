@@ -1,0 +1,38 @@
+* {
+    font-family: sans-serif;
+
+}
+
+table {
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    border-collapse: collapse;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 100%;
+}
+
+td,
+th {
+    border: 1px solid black;
+    text-align: center;
+    z-index: -1;
+    padding: 10px;
+
+}
+
+td:first-child {
+    background-color: rgb(140, 35, 35);
+}
+
+td:nth-child(7) {
+    background-color: rgb(8, 122, 8);
+}
