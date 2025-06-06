@@ -21,6 +21,7 @@ function getCookies(nombreCookie) {
     return "";
 }
 
+
 function getCookies(nombreCookie) {
     let cookies = document.cookie;
     let pos = cookies.search(nombreCookie + "=");

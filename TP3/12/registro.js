@@ -26,7 +26,6 @@ function contarVisitas() {
         cantidadVisitas = aux + 1;
     }
     localStorage.setItem("cantidadVisitas", cantidadVisitas);
-    return cantidadVisitas;
 }
 
 function setUltimaVisita() {
